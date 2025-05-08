@@ -9,7 +9,13 @@ header h1{
 }
 
 .article-noticias{
-
+    background-color: black;
+    color: aquamarine;
 }
 
-a href="#layout"
+a [href="#layout"]{
+    color: bisque;
+}
+
+
+
