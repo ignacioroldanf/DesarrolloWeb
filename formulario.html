@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>InfoFunes</h1>
+    </header>
+    <main>
+        <article class="noticia">
+        <form action="https://httpbin.org/post" method="post"   target="_blank">
+            <fieldset>
+                <legend>Formulario</legend>
+                <label for="name">Nombre
+                    <input name="nombre" autocomplete="off">
+                </label>
+                <label for="name">Apellido
+                    <input  name="apellido" autocomplete="off">
+                </label>
+                <label for=""></label>
+                <label for="name"> Correo
+                    <input name="e-mail" autocomplete="off" id="name" type="email" required>
+                </label>
+    
+    
+                <fieldset>                      <!-- RadioButton -->
+                    <legend>Sexo</legend>
+                    <input value="Hombre" name="sexo" type="radio">Hombre
+                    <input type="radio" name="sexo" value="Mujer">Mujer
+                </fieldset>
+    
+                <div>               <!-- Combobox -->
+                    <select size="3" name="Pais" id="" required>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="RD" selected>Republica Dominicana</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <textarea name="comentario">Escribime tu comentario</textarea>
+                </div>
+    
+    
+    
+    
+    
+    
+                <button>Continuar...</button>
+                <a href="index.html">
+                    <button type="button">Volver</button>
+                </a>
+    
+            </fieldset>
+        </article>
+
+    </main>
+</body>
+</html>
