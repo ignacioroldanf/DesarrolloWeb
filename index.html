@@ -1,87 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>    
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arrestan a cuatro personas con cocaína y marihuana</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>InfoFunes</h1>
-    </header>
-    <main>
-        <article class="noticia">
+  <!-- HEADER -->
+<header class="header-section">
+  <div class="container header-flex">
+    <div class="header-col">
+      <a href="https://infofunes.com.ar/club" class="logo">
+        <img src="https://infofunes.com.ar/images/club/favicon.png" alt="InfoFunes Club">
+      </a>
+    </div>
+
+    <div class="header-col">
+      <a href="https://infofunes.com.ar" class="logo">
+        <img src="https://infofunes.com.ar/images/logo.png" alt="InfoFunes">
+      </a>
+    </div>
+
+    <div class="header-col">
+      <div class="header-search">
+        <button class="header-search-toggle">
+          Buscar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-date">
+    Miércoles, 04 de Junio 2025
+  </div>
+
+</header>
+
+    <!-- menú de navegación simulado -->
+    <nav class="main-menu">
+      <ul>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Locales</a></li>
+        <li><a href="#">Policiales</a></li>
+        <li><a href="#">Deportes</a></li>
+        <li><a href="#">Opinión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+<main style="background-color: white;">
+  <div class="site-container">
+    <div class="row">
+      <!-- NOTICIA -->
+      <div class="content-area">
+        <div class="single-news-area">
+          <article class="noticia">
+            <div class="categoria-wrapper">
+              <span class="category">Policiales</span>
+            </div>
             <h2 class="titulo">Arrestan a cuatro personas con cocaína y marihuana, una menor entre ellos</h2>
-            <p class="fecha">Miércoles, 09 de Abril del 2025</p>
-            <img src="https://infofunes.com.ar/uploads/Policia comisaria 23 (13).jpg" alt="Arresto en Funes" class="imagen-noticia">
+            <p class="fecha">Miércoles, 04 de Junio 2025</p>
+            <img src="https://infofunes.com.ar/uploads/Policia comisaria 23 (13).jpg" alt="Arresto en Funes" class="imagen-noticia" />
             <p class="resumen">El operativo lo realizó el Comando de Funes este miércoles a la madrugada. Hasta entonces siguen en la Comisaría 23 a la espera de fiscalía para declarar.</p>
             <p class="contenido">Durante un recorrido de personal del Comando de Funes se pudo ver en la madrugada del miércoles que en la esquina de Catamarca y Leloir había cuatro personas en actitud sospechosa. Dos masculinos estaban fuera del auto y dentro del Fiat Duna blanco una mujer junto a una nena. Ante el pedido de los policías de identificación, los cuatro no pudieron dar con ella y se les encontró en el vehículo diez paquetes de cocaína y una bolsa con aproximadamente unos 70 u 80 gramos de marihuana, según informaron a este medio. Acto seguido se trasladaron a las personas a la Comisaría 23, donde aún siguen detenidas, a la espera de directivas de la Fiscalía.</p>
-
-        </article>
-
-        <form action="https://httpbin.org/post" method="post"   target="_blank">
-            <fieldset>
-                <legend>Formulario</legend>
-                <label for="name">Nombre
-                    <input name="nombre" autocomplete="off">
-                </label>
-                <label for="name">Apellido
-                    <input  name="apellido" autocomplete="off">
-                </label>
-                <label for=""></label>
-                <label for="name"> Correo
-                    <input name="e-mail" autocomplete="off" id="name" type="email" required>
-                </label>
-    
-    
-                <fieldset>                      <!-- RadioButton -->
-                    <legend>Sexo</legend>
-                    <input value="Hombre" name="sexo" type="radio">Hombre
-                    <input type="radio" name="sexo" value="Mujer">Mujer
-                </fieldset>
-    
-                <div>               <!-- Combobox -->
-                    <select size="3" name="Pais" id="" required>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Francia">Francia</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="RD" selected>Republica Dominicana</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <textarea name="comentario">Escribime tu comentario</textarea>
-                </div>
-    
-    
-    
-    
-    
-    
-                <button>Continuar...</button>
-    
-            </fieldset>
-    
-
-    </main>
-            
-        
-
-        <footer>
-                <a href="https://infofunes.com.ar/noticias/arrestan-a-cuatro-personas-con-cocaina-y-marihuana-una-menor-entre-ellos">
-                    Noticia original
-                </a>
-        </footer>
-
+          </article>
         </div>
+      </div>
+
+      <!-- ASIDE PUBLICITARIO -->
+      <aside class="sidebar">
+        <div class="widget-box">
+          <img src="Publicidades/PubliDepto.png" alt="Publicidad 1" />
+        </div>
+        <div class="widget-box">
+          <img src="Publicidades/PubliLitoralGas.png" alt="Publicidad 2" />
+        </div>
+      </aside>
     </div>
-        
-    
+  </div>
+
+  <!-- FORMULARIO DE NEWSLETTER -->
+  <div class="newsletter-wrapper">
+    <div class="sidebar-subscribe">
+      <p class="titulo_suscri_news">Suscribite al Newsletter</p>
+      <p class="det_suscri_news">
+        Recibí las noticias de tu ciudad y toda la región en tu mail. Así de simple, al alcance de tu mano.
+      </p>
+
+      <form id="form_suscripcion" name="form_suscripcion" method="post" class="subscribe-form">
+        <input type="email" placeholder="E-MAIL" name="email" required>
+        <button type="submit" id="btn_suscripcion" class="button">SUSCRIBIRME</button>
+        <div id="mensajes_form"></div>
+      </form>
+
+      <div class="extra-buttons">
+        <a href="formulario.html"><button>Formulario de contacto</button></a>
+        <a href="https://infofunes.com.ar/noticias/arrestan-a-cuatro-personas-con-cocaina-y-marihuana-una-menor-entre-ellos">
+          <button>Noticia original</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <!-- FOOTER -->
+<footer class="footer-bottom-section" style="background-color: #4c4c4c;">
+  <div class="container footer-container">
+    <div class="row">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <a href="https://infofunes.com.ar">
+          <img src="https://infofunes.com.ar/images/logos/logo-pie.png" alt="InfoFunes" />
+        </a>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/infofunes/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://x.com/infofunesok" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://web.facebook.com/infofunesnoticias/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCAG9vqLDGYxnmcJN2tbGVWQ" target="_blank"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Menú de secciones -->
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Deportes</a></li>
+        <li><a href="#">Región</a></li>
+        <li><a href="#">Ciudad</a></li>
+        <li><a href="#">Negocios</a></li>
+        <li><a href="#">Ideas</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">General</a></li>
+        <li><a href="#">Historias</a></li>
+        <li><a href="#">Trabajo</a></li>
+        <li><a href="#">Política</a></li>
+        <li><a href="#">Policiales</a></li>
+        <li><a href="#">Educación</a></li>
+        <li><a href="#">Urbanismo</a></li>
+        <li><a href="#">Messi en Funes</a></li>
+        <li><a href="#">Verano</a></li>
+        <li><a href="#">Entrevista</a></li>
+        <li><a href="#">Cafecito</a></li>
+        <li><a href="#">Agro</a></li>
+        <li><a href="#">Autos</a></li>
+        <li><a href="#">Temporal</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
-

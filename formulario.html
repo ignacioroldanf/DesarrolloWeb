@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header-section">
+  <div class="container header-flex">
+    <div class="header-col">
+      <a href="https://infofunes.com.ar/club" class="logo">
+        <img src="https://infofunes.com.ar/images/club/favicon.png" alt="InfoFunes Club">
+      </a>
+    </div>
+    <div class="header-col">
+      <a href="https://infofunes.com.ar" class="logo">
+        <img src="https://infofunes.com.ar/images/logo.png" alt="InfoFunes">
+      </a>
+    </div>
+    <div class="header-col">
+      <div class="header-search">
+        <button class="header-search-toggle">
+          Buscar <img src="https://www.svgrepo.com/show/13691/search.svg" alt="Buscar">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header-date">
+    Miércoles, 04 de Junio 2025
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="main-menu">
+  <ul>
+    <li><a href="#">Noticias</a></li>
+    <li><a href="#">Locales</a></li>
+    <li><a href="#">Policiales</a></li>
+    <li><a href="#">Deportes</a></li>
+    <li><a href="#">Opinión</a></li>
+  </ul>
+</nav>
+
+<!-- CONTENIDO -->
+<main style="background-color: white;">
+  <div class="site-container">
+    <div class="single-news-area">
+      <article class="noticia">
+        <div class="categoria-wrapper">
+          <span class="category">Contacto</span>
+        </div>
+        <h2 class="titulo">Formulario de contacto</h2>
+<form action="https://httpbin.org/post" method="post" target="_blank" class="formulario-flex">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pais">País</label>
+      <select name="pais" id="pais" required>
+        <option value="Argentina">Argentina</option>
+        <option value="Francia">Francia</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Chile">Chile</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="RD" selected>República Dominicana</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="comentario">Comentario</label>
+      <textarea name="comentario" id="comentario" rows="4" required></textarea>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <fieldset class="form-group">
+      <legend>Sexo</legend>
+      <label><input type="radio" name="sexo" value="Hombre" required> Hombre</label>
+      <label><input type="radio" name="sexo" value="Mujer"> Mujer</label>
+    </fieldset>
+  </div>
+
+  <div class="form-row">
+    <button type="submit">Enviar</button>
+    <a href="index.html"><button type="button">Volver</button></a>
+  </div>
+</form>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer-bottom-section">
+  <div class="container footer-container">
+    <div class="row">
+      <div class="footer-logo">
+        <a href="https://infofunes.com.ar">
+          <img src="https://infofunes.com.ar/images/logos/logo-pie.png" alt="InfoFunes" />
+        </a>
+      </div>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/infofunes/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://x.com/infofunesok" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://web.facebook.com/infofunesnoticias/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCAG9vqLDGYxnmcJN2tbGVWQ" target="_blank"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Deportes</a></li>
+        <li><a href="#">Región</a></li>
+        <li><a href="#">Ciudad</a></li>
+        <li><a href="#">Negocios</a></li>
+        <li><a href="#">Ideas</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">General</a></li>
+        <li><a href="#">Historias</a></li>
+        <li><a href="#">Trabajo</a></li>
+        <li><a href="#">Política</a></li>
+        <li><a href="#">Policiales</a></li>
+        <li><a href="#">Educación</a></li>
+        <li><a href="#">Urbanismo</a></li>
+        <li><a href="#">Messi en Funes</a></li>
+        <li><a href="#">Verano</a></li>
+        <li><a href="#">Entrevista</a></li>
+        <li><a href="#">Cafecito</a></li>
+        <li><a href="#">Agro</a></li>
+        <li><a href="#">Autos</a></li>
+        <li><a href="#">Temporal</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
