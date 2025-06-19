@@ -173,15 +173,9 @@ body {
 }
 
 /* === FORMULARIO FLEX === */
-.formulario-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 .form-row {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 

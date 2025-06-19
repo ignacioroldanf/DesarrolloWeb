@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario de Contacto</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"/>
-</head>
 <body>
 
 <!-- HEADER -->
@@ -54,57 +50,69 @@
     <div class="single-news-area">
       <article class="noticia">
         <div class="categoria-wrapper">
-          <span class="category">Contacto</span>
+          <span class="category">Suscripción</span>
         </div>
-        <h2 class="titulo">Formulario de contacto</h2>
-<form action="https://httpbin.org/post" method="post" target="_blank" class="formulario-flex">
+        <h2 class="titulo">Formulario de Suscripción</h2>
+<form action="https://httpbin.org/post" method="post" id="formulario" target="_blank" style="  display: flex; flex-direction: column; flex-wrap: wrap; gap: 20px;">
+  
   <div class="form-row">
+
     <div class="form-group">
-      <label for="nombre">Nombre</label>
+      <label for="nombre">Nombre Completo</label>
       <input type="text" name="nombre" id="nombre" required>
     </div>
     <div class="form-group">
-      <label for="apellido">Apellido</label>
-      <input type="text" name="apellido" id="apellido" required>
+      <label for="dni">DNI</label>
+      <input type="number" name="dni" id="dni" required>
     </div>
-  </div>
-
+  </div> 
+  
   <div class="form-row">
     <div class="form-group">
       <label for="email">Correo electrónico</label>
       <input type="email" name="email" id="email" required>
     </div>
+    
     <div class="form-group">
-      <label for="pais">País</label>
-      <select name="pais" id="pais" required>
-        <option value="Argentina">Argentina</option>
-        <option value="Francia">Francia</option>
-        <option value="Uruguay">Uruguay</option>
-        <option value="Chile">Chile</option>
-        <option value="Venezuela">Venezuela</option>
-        <option value="RD" selected>República Dominicana</option>
-      </select>
+      <label for="contra">Contraseña</label>
+      <input type="password" name="contra" id="contra" required>
+    </div>
+  </div>  
+    
+  <div class="form-row">
+
+    <div class="form-group">
+      <label for="edad">Edad</label>
+      <input type="number" name="edad" id="edad">
+    </div>
+    <div class="form-group">
+      <label for="telefono">Telefono</label>
+      <input type="number" name="telefono" id="telefono">
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group">
-      <label for="comentario">Comentario</label>
-      <textarea name="comentario" id="comentario" rows="4" required></textarea>
+      <label for="direccion">Dirección</label>
+      <input type="text" name="direccion" id="direccion">
+    </div>
+    
+    <div class="form-group">
+      <label for="ciudad">Ciudad</label>
+      <input type="text" name="ciudad" id="ciudad">
+    </div>
+    
+    <div class="form-group">
+      <label for="cp">Código Postal</label>
+      <input type="number" name="cp" id="cp">
     </div>
   </div>
-
-  <div class="form-row">
-    <fieldset class="form-group">
-      <legend>Sexo</legend>
-      <label><input type="radio" name="sexo" value="Hombre" required> Hombre</label>
-      <label><input type="radio" name="sexo" value="Mujer"> Mujer</label>
-    </fieldset>
-  </div>
-
+  
   <div class="form-row">
     <button type="submit">Enviar</button>
-    <a href="index.html"><button type="button">Volver</button></a>
+    
+    <a href="index.html">
+      <button type="button">Volver</button></a>
   </div>
 </form>
 
@@ -156,7 +164,8 @@
       </ul>
     </div>
   </div>
-</footer>
 
+</footer>
+<script src="./index.js"></script>
 </body>
 </html>
