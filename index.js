@@ -15,84 +15,90 @@ const inputs = document.querySelectorAll('#formulario input')
 const validarForm = (e) => {
     switch(e.target.name){
         case 'nombre':
+
             if(expresiones.nombre.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+                document.getElementById('grupo__nombre').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('Nombre no válido')
+                document.getElementById('grupo__nombre').classList.add('formulario__grupo-incorrecto')
             }
         break;
         
         case 'dni':
             if(expresiones.dni.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+                document.getElementById('grupo__dni').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('DNI no válido')
+                document.getElementById('grupo__dni').classList.add('formulario__grupo-incorrecto')
             }
         break;
         
         case 'email':
-            if(expresiones.dni.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+            if(expresiones.email.test(e.target.value)){ //si está todo bien
+                document.getElementById('grupo__mail').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('email no válido')
+                document.getElementById('grupo__mail').classList.add('formulario__grupo-incorrecto')
+            }
+        break;
+
+        case 'contra':
+            if(expresiones.contra.test(e.target.value)){
+                document.getElementById('grupo__contra').classList.remove('formulario__grupo-incorrecto');
+            } else {
+                document.getElementById('grupo__contra').classList.add('formulario__grupo-incorrecto');
+            }
+        break;
+
+        
+        case 'edad':
+            const valorEdad = e.target.value;
+            if (expresiones.edad.test(valorEdad) && parseInt(valorEdad) >= 18) {
+                document.getElementById('grupo__edad').classList.remove('formulario__grupo-incorrecto');
+            } else {
+                document.getElementById('grupo__edad').classList.add('formulario__grupo-incorrecto');
             }
         break;
         
-        case 'edad':
-            if(expresiones.edad.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
-            }
-            else{
-                if (expresiones.edad.test(valorEdad) && parseInt(valorEdad) >= 18) {
-                
-                    console.log('Todo bien');
-
-                } else {
-                    alert('Edad no válida')
-                }
-            }
-        break; 
-        
         case 'telefono':
             if(expresiones.telefono.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+                document.getElementById('grupo__telefono').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('Teléfono no válido')
+                document.getElementById('grupo__telefono').classList.add('formulario__grupo-incorrecto')
             }
         break;
 
         case 'direccion':
             if(expresiones.direccion.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+                document.getElementById('grupo__direccion').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('Direccion no válida')
+                document.getElementById('grupo__direccion').classList.add('formulario__grupo-incorrecto')
             }
         break;
         case 'ciudad':
             if(expresiones.ciudad.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+                document.getElementById('grupo__ciudad').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('Ciudad no válida')
+                document.getElementById('grupo__ciudad').classList.add('formulario__grupo-incorrecto')
             }
         break;
         case 'cp':
             if(expresiones.cp.test(e.target.value)){ //si está todo bien
-                console.log('Todo bien');
+                document.getElementById('grupo__cp').classList.remove('formulario__grupo-incorrecto')
             }
             else{
-                alert('Código Postal no válido')
+                document.getElementById('grupo__cp').classList.add('formulario__grupo-incorrecto')
             }
         break;
     }
 }    
 inputs.forEach((input) => {
+    input.addEventListener('keyup', validarForm);
     input.addEventListener('blur', validarForm);
+
 });
 
 
