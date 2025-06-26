@@ -6,3 +6,5 @@ Links a versiones anteriores:
 Clase 3: https://github.com/ignacioroldanf/DesarrolloWeb/tree/clase_3
 Clase 4: https://github.com/ignacioroldanf/DesarrolloWeb/tree/Clase_4
 Clase 5: https://github.com/ignacioroldanf/DesarrolloWeb/tree/Clase_5
+Clase 6: https://github.com/ignacioroldanf/DesarrolloWeb/tree/Clase_6
+Clase 9: https://github.com/ignacioroldanf/DesarrolloWeb/tree/Clase_9
