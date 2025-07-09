@@ -1,0 +1,73 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /*si un elemento tiene un tamaño fijo, lo respeta*/
+
+    height: 200px;
+
+    justify-content: center; /*alinea en altura*/
+    align-items: center; /*alinea horizontalmente*/
+    align-content: center;
+}
+
+
+.box{
+    text-align: center;
+}
+
+
+/*containers del body*/
+.cont-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:stretch;
+
+}
+
+.cont-filtros{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:center;
+    height: 40px;
+
+}
+
+div div h3{
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-char{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;   
+}
+
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.character-card {
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+.character-card img{
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP API Rick and Morty</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background-color: olivedrab;">
+    <header class="container" style="background-color: yellow;">        
+        <div>
+            <h1>RICK AND MORTY</h1>
+        </div>
+    </header>
+
+        <div class="cont-main">
+            <div class="cont-filtros">
+                <h3>Filtro por Nombre</h3>
+                <input type="text" id="filtroNombre">
+                <h3>Filtro por Estado</h3>
+                <select id="filtroEstado">
+                    <option value="alive">Vivo</option>
+                    <option value="dead">Muerto</option>
+                    <option value="unknown">Desconocido</option>
+                </select>
+            </div>
+        </div>
+        <div class="cont-char">
+            <div id="characters">
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+
+</body>
+</html>
