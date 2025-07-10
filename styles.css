@@ -433,6 +433,22 @@ fieldset.form-group legend {
   .footer-nav li {
     margin: 6px 0;
   }
+    .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    min-width: unset;
+    width: 100%;
+  }
+
+  fieldset.form-group {
+    width: 100%;
+  }
+
+  .form-row button {
+    width: 100%;
+  }
 }
 
 /* estilos para la validacion del form */
@@ -443,4 +459,54 @@ fieldset.form-group legend {
 
 .formulario__grupo-incorrecto .formulario__input {
   border: 3px solid red;
+}
+
+
+/*estilos para el modal*/
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal_container{
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: auto;
+  place-items: center;
+}
+
+.modal_titulo{
+  font-size: 2.5rem;
+}
+
+.modal-show{
+  opacity: 1;
+  pointer-events: unset;
+}
+
+@media (max-width: 600px) {
+  .modal_container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modal_titulo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .modal_parrafo {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
