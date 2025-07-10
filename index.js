@@ -136,24 +136,35 @@ inputs.forEach((input) => {
 
 });
 
+//modal
 
+const abrirModal = document.getElementById('BtnEnviar');
+const modal = document.querySelector('.modal');
+const cerrarModal = document.querySelector('.modal_cerrar');
 
-document.getElementById('BtnEnviar');
-
-
-formulario.addEventListener('submit', (e) => {
+abrirModal.addEventListener('click', (e)=>{
     e.preventDefault();
+    modal.classList.add('modal-show');
+
+        //carga de datos del form
+    
+    const pModal = document.querySelector('.modal_parrafo');
+
+    let contenido = '';
+    inputs.forEach(input => {
+        const nombreCampo = input.name;
+        const valorCampo = input.value;
+
+        if(campos[nombreCampo]){
+            const label = nombreCampo.charAt(0).toUpperCase() + nombreCampo.slice(1);
+            contenido += `<strong>${label}:</strong> ${valorCampo}<br>`;        }
+    })
+            
+    pModal.innerHTML = contenido;
 })
 
-_datos={
-    dni: 1,
-    nombre: 'nacho'
-}
+cerrarModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.remove('modal-show');
+})
 
-fetch('https://httpbin.org/post', { 
-  method: "POST", 
-  body: JSON.stringify(_datos), 
-  headers: {"Content-type": "application/json; charset=UTF-8"} 
-}) 
-.then(response => response.json())  
-.then(json => console.log(json));
